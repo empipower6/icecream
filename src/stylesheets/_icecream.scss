@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700;400&display=swap');
+
+.icecream-section{
+   
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: space-between;
+    height:90vh;
+    padding:5vh 2vw;
+    
+    .image{
+        border:0.1vw solid #6D6570;
+        position:relative;
+
+    }
+    img{
+        height:100%;
+        width:100%;
+        object-fit: cover;
+        object-position: 50% 25%;
+
+    }
+
+    .desc{
+        position:absolute;
+        top:0;left:0;right:0;bottom:0;
+        z-index:0;
+        display:flex;
+        font-family: 'Roboto', sans-serif;           
+        font-style: normal;
+        font-weight: bold;
+        color:white;
+
+    }
+
+    .icecream-stack{
+        width:30%;
+        height:100%; 
+        overflow:hidden;
+
+        .desc{
+            align-items: center;
+
+
+            .desc-summer{
+                background: rgba(0, 0, 0, 0.5);
+                width:100%;
+                text-align:center;
+                display:flex;
+                flex-flow:column nowrap;
+                font-size:3vw;
+                backdrop-filter: blur(4px);
+    
+    
+            }
+
+        }  
+    }
+
+    .second-block{
+        height:100%;  
+        width:60%;
+        display:flex;
+        flex-flow:row wrap;
+        justify-content: space-between;
+        align-content:space-between;
+
+        .icecream-avocado,.icecream-ube{
+
+            height:45%;
+            width:45%;
+
+            .desc{
+                align-items:flex-end;
+                justify-content:center;
+                padding-bottom:3vh;
+
+                button{
+                    color:white;
+                    background: #7D63B9;
+                    border: 0.4vw solid #FFF0E6;
+                    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+                    border-radius: 30px;
+                    font-size:1.3vw;
+                    padding:0.5vw 1.5vw;
+                    cursor:pointer;
+                }
+
+            }
+        
+        }
+
+        .icecream-avocado .desc button{
+          
+                background:#206C00;
+            
+        }
+
+        .icecream-sides{
+            height:45%;
+            width:100%;
+
+            .desc{
+                justify-content: center;
+                align-items: center;
+                font-weight:400;
+                overflow:hidden;
+
+
+                h1{
+                    font-weight:400;
+                    font-size:2.5vw;
+                }
+                
+
+
+                .desc-phil{
+                    width:70%;
+                    background: #3E3940;
+                    padding:1vw 2vw;
+                    overflow:hidden;
+                    font-size:1.1vw;
+
+
+                }
+            }
+            
+        }
+        
+    }
+
+   
+}
+
+
+@media only screen and (max-width:980px) and (min-width:480px){
+
+    .icecream-section .icecream-stack .desc .desc-summer{
+                   
+                    font-size:3vw;
+        
+     
+    
+          
+    
+        .second-block{
+           
+            .icecream-avocado,.icecream-ube{
+    
+             
+                .desc button{
+                       
+                        font-size:1.7vw;
+                      
+                    
+    
+                }
+            
+            }
+    
+            
+    
+            .icecream-sides .desc{
+                    
+    
+    
+                h1{
+                        font-weight:400;
+                        font-size:3vw;
+                }
+                    
+                .desc-phil{
+                       
+                        font-size:1.7vw;
+    
+    
+                }
+                
+                
+            }
+            
+        }
+    }
+}
+
+@media only screen and (max-width:480px){
+
+
+
+.icecream-section{
+   
+    flex-flow:column nowrap;
+    align-items: center;
+    height:100%;
+    padding:0vh 0vw;
+  
+
+    .icecream-stack{
+        width:100%;
+        height:50vh; 
+        padding-bottom:5vw;
+
+        .desc .desc-summer{
+                
+                font-size:6vw;
+
+        }  
+    }
+
+    .second-block{
+        width:100%;
+        flex-flow:column nowrap;
+       
+
+        .icecream-avocado,.icecream-ube{
+
+            width:100%;
+            height:50vh; 
+            padding-bottom:5vw;
+
+            .desc button{
+
+                    font-size:6vw;
+                    padding:0.5vw 5vw;
+            }
+        
+        }
+
+    
+        .icecream-sides{
+            height:50vh;
+
+            .desc{
+              
+                h1{
+                    font-size:6vw;
+                }
+
+                .desc-phil{
+                  
+                    font-size:4vw;
+             }
+            }
+            
+        }
+        
+    }
+ 
+}
+}
+
+
+
+
